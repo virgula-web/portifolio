@@ -1,0 +1,157 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+/* Estilos da Seção "About Us" */
+.about {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilos do Círculo de Perfil */
+.profile-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Faz o círculo */
+    background-image: url('sua_foto.jpg'); /* Adicione o caminho da sua foto */
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 20px; /* Centraliza e dá margem embaixo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+/* Estilos da Seção "About Us" */
+.about {
+    background-color: #8c0005;
+    padding: 40px 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.about h2 {color: white;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    color:white;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+/* Estilos do Círculo de Perfil */
+.profile-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Faz o círculo */
+    background-image: url('me.jpg'); /* Adicione o caminho da sua foto */
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 20px; /* Centraliza e dá margem embaixo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    color: #8c0005; /* Cor ao passar o mouse */
+}
