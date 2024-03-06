@@ -1,0 +1,244 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Mantém o corpo da página com pelo menos 100% da altura da janela visível */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+.menu ul li a:hover {
+    color: #8c0005; 
+}
+
+
+.about {
+    background-color: #8c0005;
+    padding: 30px ;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center; 
+}
+
+.about h2 {color: white;
+    font-size: 28px;
+    margin-bottom: 10px;
+
+}
+
+.about p {
+    color:white;
+    font-size: 18px;
+    line-height: 1.7;
+    
+}
+
+.about h3 {
+    color: white;
+    font-size: 22px;
+
+}
+
+
+
+.profile-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    background-image: url('/img/me.jpg'); 
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#btnTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#btnTop:hover {
+    background-color: #555;
+}
+/*
+.tecnologia {
+    text-align: center;
+    margin: 0;
+    background-color: white;
+}
+
+*/
+#tec {
+    width: 200px; /* 50% do tamanho original */
+    height: auto; /* Mantém a proporção original */
+}
+
+#tec1 {
+    width: 105px; /* 50% do tamanho original */
+    height: auto; /* Mantém a proporção original */
+}
+
+#tec2 {
+    width: 70px; /* 50% do tamanho original */
+    height: auto; /* Mantém a proporção original */
+}
+
+
+.tecnologia {
+    text-align: center;
+    margin: 0;
+    background-color: white;
+    opacity: 0; /* Começa com opacidade 0 para esconder os elementos */
+    transform: translateY(20px); /* Inicialmente, move para baixo 20px */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transição suave */
+}
+
+.tec-img {
+    width: 200px; /* 50% do tamanho original */
+    height: auto; /* Mantém a proporção original */
+    margin: 10px;
+}
+
+.tecnologia.show {
+    opacity: 1; /* Quando a classe .show é adicionada, os elementos aparecem */
+    transform: translateY(0); /* E volta à posição original */
+}
+
+
+
+.wrapper {
+    flex: 1; /* Faz com que a wrapper ocupe todo o espaço vertical restante */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: auto; /* Empurra o footer para o final da página */
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer-info h3,
+.footer-links h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-info p,
+.footer-links ul {
+    color: #ccc;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+
+}
+
+.footer-links ul li a:hover {
+    color: #8c0005;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    text-align: center;
+    color: #ccc;
+}
+
+
+
+.underline-hover {
+    position: relative;
+    text-decoration: none;
+    color: #333; /* Cor do texto normal */
+  }
+  
+  .underline-hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Altura da linha */
+    bottom: -2px; /* Posição da linha em relação ao texto */
+    left: 0;
+    background-color: white; /* Cor da linha */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .underline-hover:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
